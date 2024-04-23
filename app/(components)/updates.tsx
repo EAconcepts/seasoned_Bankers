@@ -3,15 +3,37 @@
 import React from "react";
 import { Underline } from "./events";
 import Image from "next/image";
-import updates from "../../public/assets/updates.png";
+import updates1 from "../../public/assets/updates1.png";
+import updates2 from "../../public/assets/updates2.png";
+import updates3 from "../../public/assets/updates3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 const Updates = () => {
+  const updates = [
+    {
+      title: "How Technology is Transforming Banking.",
+      image: updates1,
+      time: "12:00pm GST",
+      // by: "Interview with Ayoola"
+    },
+    {
+      title: "Tips from a Seasoned Banker. ",
+      image: updates2,
+      time: "12:00pm GST",
+      by: "Interview with Ayoola",
+    },
+    {
+      title: "Building Meaningful Relationships in the Banking Industry",
+      image: updates3,
+      time: "12:00pm GST",
+      // by: "Interview with Ayoola"
+    },
+  ];
   return (
-    <div className="bg-[#C22D28] p-[16px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
+    <div className="bg-[#C22D28] p-[16px]  lg:mt-[40px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
       <h1 className="font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-white">
         Updates from Our Members
       </h1>
@@ -37,33 +59,30 @@ const Updates = () => {
         }}
         modules={[Pagination]}
         className="mySwipe w-[100%] mt-[40px] pb-[86px]"
-      >
-        <SwiperSlide className="w-[100%]">
+      >{
+        updates?.map((update, index)=>(
+        <SwiperSlide key={index} className="w-[100%]">
           <Image
-            src={updates}
+            src={update.image}
             height={302}
-            width={328}
+            width={384}
             alt=""
-            className="w-full"
+            className="max-lg:full h-[302px] lg:h-[302px] lg:rounded-[12px]"
           />
           <div className="px-[12px] mt-[24px]">
             <h4 className="text-white text-[36px] font-[600] tracking-[2%] leading-[43.2px]">
-              How Technology is Transforming Banking.
+              {update.title}
             </h4>
             <p className="text-[#F5F5F5] font-[400] text-[24px] leading-[28.8px] ">
-              12:00pm GST
+              {update.by && update.by}
+            </p>
+            <p className="text-[#F5F5F5] font-[400] text-[24px] leading-[28.8px] ">
+              {update.time}
             </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="w-full">
-          <Image
-            src={updates}
-            height={302}
-            width={328}
-            alt=""
-            className="w-full"
-          />
-        </SwiperSlide>
+        ))}
+       
       </Swiper>
     </div>
   );

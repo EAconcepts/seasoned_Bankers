@@ -13,7 +13,7 @@ const Hero = () => {
   const heroImages = [image1, image2, image3, image4, image5, image6];
   return (
     <>
-      <div className="pt-[40px] lg:px-[96px] px-[28px] flex max-lg:flex-col font-sofiaSans">
+      <div className="pt-[40px] lg:mt-[40px] lg:px-[96px] px-[28px] flex max-lg:flex-col font-sofiaSans lg:pb-[80px]">
         <div className="lg:self-center">
           <div className=" lg:text-[24px] text-[16px] lg:leading-[28.8px] leading-[19.2px] tracking-[2%] text-wrap w-full">
             <span className="font-[400]">Level Up Your Career:</span>
@@ -34,7 +34,7 @@ const Hero = () => {
           </Button>
         </div>
         {/* Images */}
-        <div className="hidden">
+        <div className="max-lg:hidden ">
           <ImageGrid />
         </div>
         {/* <div className=" gri grid-cols3 grid-image place-items-end gap-x-[12px] gap-y-[16px]">
@@ -62,7 +62,7 @@ const Hero = () => {
         ))}
       </div> */}
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden mt-[24px]">
         <ImageGrid />
       </div>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Underline } from "./events";
 import Image from "next/image";
+import offerImage2 from "../../public/assets/offer2.png";
 import offerImage from "../../public/assets/offer.png";
 
 const Offer = () => {
@@ -32,7 +33,7 @@ const Offer = () => {
     },
   ];
   return (
-    <div className="p-[16px] lg:pt-[40px] lg:px-[96px] lg:mt-[40px]">
+    <div className="p-[16px] lg:py-[40px] lg:px-[96px] lg:mt-[40px]">
       <h1 className="text-[28px] font-[600] leading-[33.6px] tracking-[2%] lg:text-[36px] lg:leading-[43.2px] text-black">
         What We Offer
       </h1>
@@ -58,11 +59,11 @@ const Offer = () => {
         />
         </div>
         <Image
-          src={offerImage}
-          height={328}
-          width={328}
+          src={offerImage2}
+          height={3478}
+          width={818}
           alt="woman"
-          className="size-[328px] rounded-[10.24px] l"
+          className="w-[328px] h-[818px] rounded-[10.24px] max-lg:hidden"
         />
       </div>
     </div>

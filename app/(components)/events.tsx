@@ -18,7 +18,7 @@ const Events = () => {
     },
   ];
   return (
-    <div className="p-[16px] lg:pt-[40px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
+    <div className="p-[16px] lg:pt-[40px] max-lg:mt-[24px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
       <div className="">
         <h2 className="font-sofiaSans font-[600] lg:text-[36px] text-[28px] lg:leading-[36px] leading-[33.6px] tracking-[2%] text-black">
           Upcoming Events

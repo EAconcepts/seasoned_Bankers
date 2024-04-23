@@ -4,7 +4,7 @@ import image2 from "../../public/assets/image2.png";
 import image3 from "../../public/assets/image3.png";
 import image4 from "../../public/assets/image4.png";
 import image5 from "../../public/assets/image5.png";
-import image6 from "../../public/assets/image6.png";
+import image6 from "../../public/assets/image-6.png";
 import Image from "next/image";
 
 const ImageGrid = () => {
@@ -20,8 +20,8 @@ const ImageGrid = () => {
             <Image src={image5} width={146} height={239} className='w-full h-[239px] lg:h-[280px] rounded-[45.12px]' alt='' />
         </div>
         <div className='flex flex-col gap-y-[24px] w-[120px] lg:w-[146px]'>
-            <Image src={image3} width={146} height={501} className='w-full h-[251px] lg:h-[501px] rounded-[45.12px]' alt='' />
-            <Image src={image6} width={146} height={330} className='w-full h-[368px] lg:h-[330px] rounded-[45.12px]' alt='' />
+            <Image src={image3} width={146} height={501} className='w-full h-[251px] lg:h-[330px] rounded-[45.12px]' alt='' />
+            <Image src={image6} width={146} height={330} className='w-full h-[368px] lg:h-[409.68px] rounded-[45.12px]' alt='' />
         </div>
     </div>
   )

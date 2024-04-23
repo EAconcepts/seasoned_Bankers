@@ -6,7 +6,11 @@ import team3 from "../../public/assets/team3.png";
 import team4 from "../../public/assets/team4.png";
 import team5 from "../../public/assets/team5.png";
 import team6 from "../../public/assets/team6.png";
-import Image from "next/image";
+import team7 from "../../public/assets/team7.png";
+import team8 from "../../public/assets/team8.png";
+import team9 from "../../public/assets/team9.png";
+import team10 from "../../public/assets/team10.png";
+import Image from "next/image"
 import { ButtonOutline } from "@/components/ui/button";
 
 const Team = () => {
@@ -41,6 +45,23 @@ const Team = () => {
       role: "Communication & PR",
       image: team6,
     },
+    {
+      name: "Anthony",
+      role: "Diaspora Coordinator",
+      image: team7,
+    },  {
+      name: "Nonso",
+      role: "Research & Insight",
+      image: team8,
+    },  {
+      name: "Dubem",
+      role: "People & Culture",
+      image: team9,
+    },  {
+      name: "David",
+      role: "People & Culture",
+      image: team10,
+    },
   ];
   return (
     <div className="w-full py-[40px] px-[16px] bg-[#F7EAD6] lg:px-[96px]">
@@ -51,12 +72,12 @@ const Team = () => {
       {/* The Team */}
       <div className="w-full grid lg:grid-cols-5 grid-cols-3 gap-[0px] mt-[40px] mb-[24px]">
         {theTeam?.map((team, index) => (
-          <div key={index} className="relative border-none w-full">
+          <div key={index} className={`${index >5 && "max-lg:hidden"} relative border-none w-full`}>
             <Image
               src={team.image}
               className="size-full "
-              width={109.33}
-              height={109.33}
+              width={218}
+              height={208}
               alt=""
             />
             <div className="absolute bottom-0 w-full px-[8px] bg-black/25 backdrop-blur-md shadow-[#42424240]">
