@@ -18,25 +18,25 @@ const Events = () => {
     },
   ];
   return (
-    <div className="p-[16px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
+    <div className="p-[16px] lg:pt-[40px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
       <div className="">
-        <h2 className="font-sofiaSans font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-black">
+        <h2 className="font-sofiaSans font-[600] lg:text-[36px] text-[28px] lg:leading-[36px] leading-[33.6px] tracking-[2%] text-black">
           Upcoming Events
         </h2>
         {/* Underline */}
         <Underline  />
         {/* Events */}
-        <div className="flex flex-col gap-y-[24px] pt-[24px]">
+        <div className="flex max-lg:flex-col gap-[24px] lg:mt-[44px] mt-[24px]">
           {events?.map((item, index) => (
             <div key={index} className="flex gap-x-[25px]">
               {/* Calendar */}
               <div className="w-[40px]"></div>
               {/* event */}
               <div className="flex flex-col">
-                <h1 className="font-[600] text-[24px] leading-[28.8px] tracking-[2%] text-black">
+                <h1 className="font-[600] text-[24px] lg:text-[36px] lg:leading-[43.2px] leading-[28.8px] tracking-[2%] text-black">
                   Mastering SEO & Content
                 </h1>
-                <div className="flex flex-col font-[400] text-[14px] leading-[16.8px] tracking-[2%] text-[#424242]">
+                <div className="flex flex-col font-[400] lg:text-[28.8px] lg:leading-[28.8px] text-[14px] leading-[16.8px] tracking-[2%] text-[#424242]">
                   <small>Nnamdi Azikiwe Stadium, Lagos</small>
                   <small>2:00pm GST</small>
                 </div>
@@ -44,7 +44,7 @@ const Events = () => {
             </div>
           ))}
         </div>
-        <Button className="w-fit mt-[40px] font-[700] py-[8px] px-[12px] rounded-[12px] text-[16px] leading-[19.2px]">
+        <Button className="w-fit mt-[40px] font-[700] lg:py-[16px] lg:px-[24px] py-[8px] px-[12px] rounded-[12px] text-[16px] lg:text-[24px] leading-[19.2px]">
           View All Events
         </Button>
       </div>

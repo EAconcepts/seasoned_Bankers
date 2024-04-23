@@ -23,7 +23,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 const InputOutline = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
     return (
-      <div className=" bg-gradient-to-tr from-primaryRed to-primaryOrange w-max rounded-[8px] p-[2px]">
+      <div className=" bg-gradient-to-tr from-primaryRed to-primaryOrange w-fi rounded-[8px] p-[2px]">
         <input
           type={type}
           className={cn(

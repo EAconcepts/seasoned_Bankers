@@ -1,7 +1,7 @@
 import React from "react";
 import { Underline } from "./events";
 import Image from "next/image";
-import offerImage from "../../public/assets/offer.png"
+import offerImage from "../../public/assets/offer.png";
 
 const Offer = () => {
   const whatWeOffer = [
@@ -32,23 +32,38 @@ const Offer = () => {
     },
   ];
   return (
-    <div className="p-[16px]">
-      <h1 className="text-[28px] font-[600] leading-[33.6px] tracking-[2%] text-balance">
-        Membership Benefits
+    <div className="p-[16px] lg:pt-[40px] lg:px-[96px] lg:mt-[40px]">
+      <h1 className="text-[28px] font-[600] leading-[33.6px] tracking-[2%] lg:text-[36px] lg:leading-[43.2px] text-black">
+        What We Offer
       </h1>
       <Underline />
-      <div className="flex flex-col mt-[40px] gap-y-[24px]">
-        {whatWeOffer?.map((offer, index) => (
-          <div key={index} className=" flex flex-col gap-y-[16px]">
-            <h1 className="font-[600] text-[24px] leading-[28.8px] tracking-[2%] text-black">
-              {offer.title}
-            </h1>
-            <p className="text-[#424242] font-[400] text-[16px] leading-[19.2px] tracking-[2%]">
-              {offer.content}
-            </p>
-          </div>
-        ))}
-        <Image src={offerImage} height={328} width={328} alt='woman' className="size-[328px] rounded-[10.24px]"/>
+      <div className="lg:flex gap-x-[24px]">
+        <div className="flex max-lg:flex-col lg:grid lg:grid-cols-2 mt-[40px] gap-y-[24px] lg:gap-[24px]">
+          {whatWeOffer?.map((offer, index) => (
+            <div key={index} className=" flex flex-col gap-y-[16px]">
+              <h1 className="font-[600] lg:text-[36px] lg:leading-[43.2px] text-[24px] leading-[28.8px] tracking-[2%] text-black">
+                {offer.title}
+              </h1>
+              <p className="text-[#424242] lg:text-[24px] lg:leading-[28.8px] font-[400] text-[16px] leading-[19.2px] tracking-[2%]">
+                {offer.content}
+              </p>
+            </div>
+          ))}
+            <Image
+          src={offerImage}
+          height={328}
+          width={328}
+          alt="woman"
+          className="size-[328px] rounded-[10.24px] lg:hidden"
+        />
+        </div>
+        <Image
+          src={offerImage}
+          height={328}
+          width={328}
+          alt="woman"
+          className="size-[328px] rounded-[10.24px] l"
+        />
       </div>
     </div>
   );

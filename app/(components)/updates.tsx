@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Underline } from "./events";
@@ -11,25 +11,58 @@ import { Pagination } from "swiper/modules";
 
 const Updates = () => {
   return (
-    <div className='bg-[#C22D28] p-[16px] font-sofiaSans'>
-      <h1 className="font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-white">Updates from Our Members</h1>
+    <div className="bg-[#C22D28] p-[16px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
+      <h1 className="font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-white">
+        Updates from Our Members
+      </h1>
       <Underline />
       <Swiper
+        slidesPerView={1}
         pagination={{
           dynamicBullets: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
         }}
         modules={[Pagination]}
         className="mySwipe w-[100%] mt-[40px] pb-[86px]"
       >
         <SwiperSlide className="w-[100%]">
-          <Image src={updates} height={302} width={328} alt="" className="w-full" />
-          <div className='px-[12px] mt-[24px]'>
-            <h4 className='text-white text-[36px] font-[600] tracking-[2%] leading-[43.2px]'>How Technology is Transforming Banking.</h4>
-            <p className="text-[#F5F5F5] font-[400] text-[24px] leading-[28.8px] ">12:00pm GST</p>
+          <Image
+            src={updates}
+            height={302}
+            width={328}
+            alt=""
+            className="w-full"
+          />
+          <div className="px-[12px] mt-[24px]">
+            <h4 className="text-white text-[36px] font-[600] tracking-[2%] leading-[43.2px]">
+              How Technology is Transforming Banking.
+            </h4>
+            <p className="text-[#F5F5F5] font-[400] text-[24px] leading-[28.8px] ">
+              12:00pm GST
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full">
-          <Image src={updates} height={302} width={328} alt="" className="w-full" />
+          <Image
+            src={updates}
+            height={302}
+            width={328}
+            alt=""
+            className="w-full"
+          />
         </SwiperSlide>
       </Swiper>
     </div>
