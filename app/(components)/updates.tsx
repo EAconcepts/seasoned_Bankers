@@ -33,7 +33,7 @@ const Updates = () => {
     },
   ];
   return (
-    <div className="bg-[#C22D28] p-[16px]  lg:mt-[40px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
+    <div className="bg-[#C22D28] p-[16px]  max-lg:pb-[86px] lg:mt-[40px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
       <h1 className="font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-white">
         Updates from Our Members
       </h1>

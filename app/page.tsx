@@ -12,13 +12,14 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full font-sofiaSans">
       <Hero />
+      <div className="max-lg:mt-[24px]">
       <Events />
+      </div>
       <Membership />
       <Offer />
       <Updates />
       <Team/>
       <Follow/>
-      <Footer/>
     </main>
   );
 }

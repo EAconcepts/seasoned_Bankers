@@ -41,7 +41,7 @@ const Footer = () => {
         />
         Become a Member Today!{" "}
       </div>
-      <div className="bg-[#202020] lg:pt-[49px] lg:py-[159px] pt-[40px] mt-[23px] lg:px-[96px] px-[16px] lg:flex lg:gap-x-[24px]">
+      <div className="bg-[#202020] pb-[40px] lg:pt-[49px] lg:py-[159px] pt-[40px] mt-[23px] lg:px-[96px] px-[16px] lg:flex lg:gap-x-[24px]">
         <div className="pt-[16px] flex max-lg:flex-wrap lg:justify-between gap-x-[24px]">
           {/* Our Products */}
           <div className="lg:w-full">
@@ -138,7 +138,7 @@ const Footer = () => {
             width={81}
             height={109.94}
             alt="logo"
-            className="lg:w-[161px] lg:h-[184.73px]"
+            className="hidden lg:block lg:w-[161px] lg:h-[184.73px]"
           />
           {/* Seasoned Bankers */}
           <div className="lg:w-[440px]">
