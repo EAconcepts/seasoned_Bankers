@@ -36,7 +36,7 @@ const Community = () => {
     community15,
   ];
   return (
-    <div className="bg-[#F7E7CE] py-[40px] px-[16px]">
+    <div className="bg-[#F7E7CE] py-[40px] px-[16px] lg:px-[96px]">
       <h2 className="font-[600] text-[28px] leading-[33.6px] tracking-[2%] text-black">
         Connect with our community
       </h2>
@@ -46,8 +46,8 @@ const Community = () => {
           <Image
             key={index}
             src={pic}
-            width="65.5"
-            height="65.5"
+            width="156"
+            height="156"
             alt=""
             className="w-full"
           />

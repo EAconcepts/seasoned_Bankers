@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="bg-[#202020] pb-[40px] lg:pt-[49px] lg:py-[159px] pt-[40px] mt-[23px] lg:px-[96px] px-[16px] lg:flex lg:gap-x-[24px]">
         <div className="pt-[16px] flex max-lg:flex-wrap lg:justify-between gap-x-[24px]">
           {/* Our Products */}
-          <div className="lg:w-full">
+          <div className="lg:w-[260px] lg:shrink-0">
             <h4 className="font-[600] text-[14px] leading-[16.8px] tracking-[2%] text-white lg:text-[20px] lg:leading-[24px]">
               Our Products
             </h4>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Resources */}
-          <div className="lg:w-full">
+          <div className="lg:w-[260px] lg:shrink-0">
             <h4 className="font-[600] text-[14px] leading-[16.8px] tracking-[2%] text-white lg:text-[20px] lg:leading-[24px]">
               Resources
             </h4>
@@ -81,9 +81,9 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex max-lg:flex-col lg:justify-betwee lg:w-full gap-x-[24px]">
+          <div className="flex max-lg:flex-col lg:justify-betwee lg:w-full gap-x-[24px] lg:shrink0">
             {/* Support */}
-            <div className="lg:w-full lg:shrink-0 max-lg:mt-[24px]">
+            <div className="lg:w-[260px] lg:shrink-0 max-lg:mt-[24px]">
               <h4 className="font-[600] text-[14px] leading-[16.8px] tracking-[2%] text-white lg:text-[20px] lg:leading-[24px]">
                 Support
               </h4>
@@ -102,11 +102,11 @@ const Footer = () => {
               </div>
             </div>
             {/* News letter */}
-            <div className=" lg:w-full flex flex-col shrink-0 max-lg:mt-[24px] ">
+            <div className=" lg:w-[260px] flex flex-col  max-lg:mt-[24px] ">
               <h4 className="font-[600] text-[14px] leading-[16.8px] tracking-[2%] lg:text-[20px] lg:leading-[24px] text-white">
                 Join Our Newsletter
               </h4>
-              <form className="mt-[40px] lg:w-full  ">
+              <form className="mt-[40px] lg:w-full  lg:shrink0">
                 <label className="text-[14px] mb-[8px] font-[400] leading-[16.8px] lg:text-[20px] lg:leading-[24px] tracking-[2%] text-[#CFCFCF]">
                   Email
                 </label>
