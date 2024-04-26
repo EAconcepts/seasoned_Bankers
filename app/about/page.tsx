@@ -1,9 +1,119 @@
 import React from "react";
+import Back from "../(components)/back";
+import { Heading } from "../(components)/heading";
+import Image from "next/image";
+import logo from "../../public/assets/logo.png";
+import Offer from "../(components)/offer";
 
 const About = () => {
+  const coreValues = [
+    {
+      title: "Integrity",
+      desc: "We prioritize integrity in all our actions and decisions, upholding honesty, transparency, and ethical conduct at all times.",
+    },
+    {
+      title: "Nuture",
+      desc: "We are committed to nurturing relationships, talent, and ideas, fostering growth and development within our community.",
+    },
+    {
+      title: "Service",
+      desc: "We are dedicated to providing exceptional service to our members, colleagues, and stakeholders, exceeding expectations and delivering value.",
+    },
+    {
+      title: "Passion",
+      desc: "We are driven by passion and enthusiasm for our work, infusing energy and dedication into everything we do.",
+    },
+    {
+      title: "Innovation",
+      desc: "We foster a culture of innovation, embracing creativity and forward-thinking to drive continuous improvement and growth.",
+    },
+    {
+      title: "Respect",
+      desc: "We show respect for our members, colleagues, and stakeholders, valuing diversity and treating others with dignity and empathy.",
+    },
+    {
+      title: "Excellence:",
+      desc: "We pursue excellence in all aspects of our work, striving to deliver high-quality results that exceed expectations.",
+    },
+  ];
   return (
-    <div>
-      About
+    <div className="pt-[40px] px-[16px] lg:px-[96px] font-sofiaSans">
+      <Back />
+      <div className="pt-[40px]">
+        <Heading title="The Seasoned Bankers Group Story" />
+        <div className="flex gap-x-[24px] mt-[40px]">
+          <Image src={logo} height={800} width={1000} alt="" className="w-[384px] shrink-0" />
+          <div className="flex flex-col gap-y-[24px]">
+            {/* About */}
+            <div className="flex flex-col gap-y-[16px]">
+              <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+                About Us
+              </h2>
+              <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+                Born from a single tweet in 2021, our association of
+                professional bankers and financial experts has grown into a
+                formidable force in the financial industry. Registered under the
+                CAC, we operate under the umbrella of Corporate Minds for
+                Leadership and Mentorship Initiative. With a dedicated 10-man
+                executive committee at the helm, we take pride in our diverse
+                membership, boasting over 100 active members who are committed
+                to excellence and continual growth in the banking sector.
+              </p>
+            </div>
+            {/* Philosophy */}
+            <div className="flex flex-col gap-y-[16px]">
+              <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+                Our Philosophy as a Group
+              </h2>
+              <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+                At Seasoned Bankers Group, we believe in the power of knowledge
+                sharing, mentorship, and collaboration for professional growth
+                in banking. Our supportive community encourages exchange of
+                insights, guidance, and inspiration among experienced and
+                aspiring bankers. With a focus on lifelong learning and
+                collective expertise, we empower each member to excel in their
+                career and contribute positively to the financial
+                industry&apos;s evolution.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Vision */}
+        <div className="lg:mt-[24px]">
+          <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+            {" "}
+            Our Vision for The Future
+          </h2>
+          <p className="text-[24px] mt-[40px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+            Our vision for Seasoned Bankers Group is to be the leading hub for
+            banking professionals, offering top-notch mentorship, networking,
+            and career resources. We plan to go global, setting up chapters in
+            major financial hubs worldwide, fostering connections across
+            borders. We&apos;ll innovate programs to tackle industry trends,
+            keeping our members ahead of the curve. Ultimately, we aim to
+            empower a community of driven bankers poised to make a lasting
+            impact on the future of finance.
+          </p>
+        </div>
+        {/* Core Values */}
+        <div className="flex flex-col gap-y-[40px] lg:mt-[24px]">
+          {coreValues?.map((value, index) => (
+            <div
+              key={index}
+              className="flex font-[400] text-[24px] leading-[28.8px] tracking-[2%]"
+            >
+              <span className="font-[700]">{index + 1}.</span>
+              <div className="">
+                <span className="font-[700] pl-[3px]"> {value.title}:</span>
+                <span className="pl-[3px]">{value.desc}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className='mt-[40px]'>
+          <Offer/>
+        </div>
+      </div>
     </div>
   );
 };
