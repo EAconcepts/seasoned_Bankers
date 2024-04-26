@@ -39,7 +39,7 @@ const Events = () => {
           <div className="relative">
             <InputOutline
               type="search"
-              className="h-[57px] pl-[48px] border-[0.5px]"
+              className="h-[57px]  lg:pl-[48px] border-[0.5px]"
               placeholder="Search for events"
             />
             <CiSearch className="text-[#292D32] text-[24px] absolute top-[50%] translate-y-[-50%] left-[12px]" />

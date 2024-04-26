@@ -18,13 +18,13 @@ const Events = () => {
     },
   ];
   return (
-    <div className="p-[16px] lg:pt-[40px] max-lg:mt[24px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
+    <div className="p-[16px] lg:py-[40px] max-lg:mt[24px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
       <div className="">
         <h2 className="font-sofiaSans font-[600] lg:text-[36px] text-[28px] lg:leading-[36px] leading-[33.6px] tracking-[2%] text-black">
           Upcoming Events
         </h2>
         {/* Underline */}
-        <Underline  />
+        <Underline />
         {/* Events */}
         <div className="flex max-lg:flex-col gap-[24px] lg:mt-[44px] mt-[24px]">
           {events?.map((item, index) => (
@@ -34,7 +34,7 @@ const Events = () => {
               {/* event */}
               <div className="flex flex-col">
                 <h1 className="font-[600] text-[24px] lg:text-[36px] lg:leading-[43.2px] leading-[28.8px] tracking-[2%] text-black">
-                {item.title}
+                  {item.title}
                 </h1>
                 <div className="flex flex-col font-[400] lg:text-[28.8px] lg:leading-[28.8px] text-[14px] leading-[16.8px] tracking-[2%] text-[#424242]">
                   <small>{item.venue}</small>
@@ -55,9 +55,14 @@ const Events = () => {
 // interface UnderlineProps  {
 //   className?: String
 // }
-export const Underline = ({className }: {className?:string}) => {
+export const Underline = ({ className }: { className?: string }) => {
   return (
-    <div className={twMerge("w-[120px] h-[2px] mt-[2px] bg-gradient-to-tr from-primaryRed to-primaryOrange", className)}></div>
+    <div
+      className={twMerge(
+        "w-[120px] h-[2px] mt-[2px] bg-gradient-to-tr from-primaryRed to-primaryOrange",
+        className
+      )}
+    ></div>
   );
 };
 export default Events;

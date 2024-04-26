@@ -1,10 +1,10 @@
 import React from "react";
 import { Underline } from "./events";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import offerImage2 from "../../public/assets/offer2.png";
 import offerImage from "../../public/assets/offer.png";
 
-const Offer = () => {
+const Offer = ({pic}:{pic?: StaticImageData}) => {
   const whatWeOffer = [
     {
       title: "MENTORSHIP PROGRAMS",
@@ -51,7 +51,7 @@ const Offer = () => {
             </div>
           ))}
             <Image
-          src={offerImage}
+          src={pic || offerImage}
           height={328}
           width={328}
           alt="woman"

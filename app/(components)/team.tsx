@@ -12,8 +12,9 @@ import team9 from "../../public/assets/team9.png";
 import team10 from "../../public/assets/team10.png";
 import Image from "next/image"
 import { ButtonOutline } from "@/components/ui/button";
+import { twMerge } from "tailwind-merge";
 
-const Team = () => {
+const Team = ({className}:{className?:string}) => {
   const theTeam = [
     {
       name: "Ayoola",
@@ -64,7 +65,7 @@ const Team = () => {
     },
   ];
   return (
-    <div className="w-full py-[40px] px-[16px] bg-[#F7EAD6] lg:px-[96px]">
+    <div className={twMerge("w-full py-[40px] px-[16px] bg-[#F7EAD6] lg:px-[96px]", className)}>
       <h1 className="font-[600] text-[28px] lg:text-[36px] lg:leading-[43.2px] leading-[33.6px] tracking-[2%] text-black">
         Meet The Team
       </h1>
