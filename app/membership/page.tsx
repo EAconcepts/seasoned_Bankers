@@ -140,7 +140,7 @@ const Membership = () => {
             {membershipOptions?.map((options, index) => (
               <div
                 key={index}
-                className="flex flex-col mt-[32px] gap-y-[24px] lg:gap-y-[40px] lg:text-[36px] lg:leading-[43.2px]"
+                className="flex flex-col mt[32px] gap-y-[24px] lg:gap-y-[40px] lg:text-[36px] lg:leading-[43.2px]"
               >
                 <h3 className="text-[24px] font-[600] leading-[28.8px] tracking-[2%] text-black ">
                   {options.title}

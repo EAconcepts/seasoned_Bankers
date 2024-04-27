@@ -48,21 +48,27 @@ const About = () => {
         <Back />
         <div className="pt-[40px]">
           <Heading title="The Seasoned Bankers Group Story" />
-          <div className="flex gap-x-[24px] mt-[40px]">
-            <Image
-              src={logo}
-              height={800}
-              width={1000}
-              alt=""
-              className="w-[384px] shrink-0"
-            />
-            <div className="flex flex-col gap-y-[24px]">
+          <div className="flex max-lg:flex-col lg:gap-x-[24px] mt-[40px]">
+            <div className="max-lg:flex max-lg:gap-x-[24px] lg:shrink-0 items-end">
+              <h2 className="lg:hidden font-[600] text-[28px] leading-[33.6px] tracking-[2%]">
+                About Us
+              </h2>
+              <Image
+                src={logo}
+                height={800}
+                width={1000}
+                alt=""
+                className="lg:w-[384px] lg:h-full w-[179.54px] max-lg:h-[206px] shrink-0"
+              />
+            </div>
+
+            <div className="flex flex-col max-lg:mt-[24px] gap-y-[24px]">
               {/* About */}
               <div className="flex flex-col gap-y-[16px]">
-                <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+                <h2 className="hidden lg:block lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
                   About Us
                 </h2>
-                <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+                <p className="text-[14px] leading-[16.8px] lg:text-[24px] text-[#424242] font-[400] lg:leading-[28.8px] tracking-[2%]">
                   Born from a single tweet in 2021, our association of
                   professional bankers and financial experts has grown into a
                   formidable force in the financial industry. Registered under
@@ -75,10 +81,10 @@ const About = () => {
               </div>
               {/* Philosophy */}
               <div className="flex flex-col gap-y-[16px]">
-                <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+                <h2 className="lg:text-[36px] text-[28px] leading-[33.6px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
                   Our Philosophy as a Group
                 </h2>
-                <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+                <p className="lg:text-[24px] text-[14px] text-[#424242] font-[400] leading-[16.8px] lg:leading-[28.8px] tracking-[2%]">
                   At Seasoned Bankers Group, we believe in the power of
                   knowledge sharing, mentorship, and collaboration for
                   professional growth in banking. Our supportive community
@@ -92,12 +98,12 @@ const About = () => {
             </div>
           </div>
           {/* Vision */}
-          <div className="lg:mt-[24px]">
-            <h2 className="lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
+          <div className="lg:mt-[24px] mt-[48px]">
+            <h2 className="lg:text-[36px] text-[28px]  text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
               {" "}
               Our Vision for The Future
             </h2>
-            <p className="text-[24px] mt-[40px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%]">
+            <p className="lg:text-[24px] text-[14px] mt-[24px] lg:mt-[40px] text-[#424242] font-[400] leading-[16.8px] lg:leading-[28.8px] tracking-[2%]">
               Our vision for Seasoned Bankers Group is to be the leading hub for
               banking professionals, offering top-notch mentorship, networking,
               and career resources. We plan to go global, setting up chapters in
@@ -109,11 +115,14 @@ const About = () => {
             </p>
           </div>
           {/* Core Values */}
-          <div className="flex flex-col gap-y-[40px] lg:mt-[24px]">
+          <div className="flex flex-col gap-y-[16px] lg:gap-y-[40px] lg:mt-[24px] mt-[32px]">
+            <h2 className="font-[600] text-[28px] leading-[33.6px] max-lg:mb-[8px] tracking-[2%] text-black ">
+              Our Core Values
+            </h2>
             {coreValues?.map((value, index) => (
               <div
                 key={index}
-                className="flex font-[400] text-[24px] leading-[28.8px] tracking-[2%]"
+                className="flex font-[400] lg:text-[24px] text-[14px]  leading-[16.px] lg:leading-[28.8px] tracking-[2%]"
               >
                 <span className="font-[700]">{index + 1}.</span>
                 <div className="">
@@ -129,7 +138,7 @@ const About = () => {
         <Offer pic={offerImg} />
       </div>
       {/* Why Join */}
-      <div className="lg:pt-[40px] lg:px-[98px]">
+      <div className="lg:pt-[40px] px-[16px] lg:px-[98px]">
         <h2 className="font-[600] mt-[32px] text-[28px] leading-[33.6px] tracking-[2%] text-black lg:text-[36px] lg:leading-[43.2px]">
           Why Join The Seasoned Bankers Group?
         </h2>
@@ -139,14 +148,14 @@ const About = () => {
       <div className="mt-[40px]">
         <Team className="bg-white" />
       </div>
-      <div className='mt-[40px]'>
-        <Updates/>
+      <div className="mt-[40px]">
+        <Updates />
       </div>
-      <div className=''>
-        <Events/>
+      <div className="">
+        <Events />
       </div>
-      <div className=''>
-        <Community/>
+      <div className="">
+        <Community />
       </div>
     </>
   );

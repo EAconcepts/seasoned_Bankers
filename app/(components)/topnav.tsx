@@ -4,7 +4,7 @@ import logo from "../../public/assets/logo.svg";
 import { FaBars } from "react-icons/fa6";
 import Link from "next/link";
 import { Button, ButtonOutline } from "@/components/ui/button";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { Underline } from "./events";
 import { IoCloseCircleOutline, IoCloseOutline } from "react-icons/io5";
@@ -19,6 +19,8 @@ const TopNav = () => {
     { link: "Events", path: "/events" },
     { link: "Contact Us", path: "/contact" },
   ];
+  // navLinks.r
+  const router = useRouter();
   return (
     <header className="pl-[20px] lg:px-[120px] pr-[15px] flex w-full justify-between font-sofiaSans">
       <Image
@@ -27,13 +29,14 @@ const TopNav = () => {
         width={47}
         alt="logo"
         className="size-auto"
+        onClick={() => router.push("/")}
       />
       {/* Links */}
       <nav
         className={`flex  items-center lg:gap-x-[48px] text-[16px] leading-[19.2px] text-[#050505] lg:mt-[18.5px] transition-all duration-500 ${
           showMenu
-            ? "fixed flex flex-col items-start top-0 right-0 bg-white max-lg:translate-x-0 h-screen w-[204px] px-[16px] gap-y-[8px]"
-            : "max-lg:translate-x-[200%] max-lg:fixed max-lg:flex-col max-lg:items-start top-0 right-0 max-lg:bg-white max-lg:translate- max-lg:h-screen max-lg:w-[204px] max-lg:px-[16px] max-lg:gap-y-[8px] "
+            ? "fixed flex flex-col items-start z-[999] top-0 right-0 bg-white max-lg:translate-x-0 h-screen w-[204px] px-[16px] gap-y-[8px]"
+            : "max-lg:translate-x-[200%] max-lg:z-[999] max-lg:fixed max-lg:flex-col max-lg:items-start top-0 right-0 max-lg:bg-white max-lg:translate- max-lg:h-screen max-lg:w-[204px] max-lg:px-[16px] max-lg:gap-y-[8px] "
         }`}
       >
         {/* Close icon */}
@@ -62,6 +65,7 @@ const TopNav = () => {
           <Link
             href={item.path}
             key={index}
+            onClick={() => setShowMenu(false)}
             className={`${
               pathname === item.path &&
               "lg:text-[#D7322C] lg:font-[700] lg:text-[18px] leading-[21.6px]"
@@ -79,7 +83,10 @@ const TopNav = () => {
         ))}
         {showMenu && (
           <div className="mt-[24px] px-[16px] self-start">
-            <ButtonOutline className="py-[8px] px-[20px] text-[16px] leading-[19.2px] text-black h-fit">
+            <ButtonOutline onClick={()=>{
+              router.push('/signin')
+              setShowMenu(false)
+            }} className="py-[8px] px-[20px] text-[16px] leading-[19.2px] text-black h-fit">
               Login
             </ButtonOutline>
           </div>
@@ -91,7 +98,7 @@ const TopNav = () => {
           className="text-black text-[20px] lg:hidden"
         />
         <div className="max-lg:hidden ">
-          <ButtonOutline className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]">
+          <ButtonOutline onClick={()=>router.push('/signin')} className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]">
             {pathname === "/" ? "Become a Member" : "Login"}
           </ButtonOutline>
         </div>

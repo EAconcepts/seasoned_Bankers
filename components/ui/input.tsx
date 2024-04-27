@@ -26,7 +26,7 @@ const InputOutline = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <div
         className={twMerge(
-          " bg-gradient-to-tr from-primaryRed to-primaryOrange w-fi rounded-[8px] overflowhidden p-[2px] h-10",
+          " bg-gradient-to-tr from-primaryRed to-primaryOrange w-fi rounded-[8px] overflowhidden p-[1px] h-10",
           className
         )}
       >

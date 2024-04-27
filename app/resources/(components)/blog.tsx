@@ -30,7 +30,7 @@ const Blog = () => {
   ];
   return (
     <div>
-      <div className="lg:grid mt-[40px] lg:grid-cols-3 gap-x-[24px]">
+      <div className="lg:grid mt-[40px] lg:grid-cols-3 max-lg:flex max-lg:flex-col max-lg:gap-y-[24px] gap-x-[24px]">
         {blog?.map((story, index) => (
           <div key={index} className="flex flex-col gap-y-[24px]">
             <Image
@@ -41,13 +41,13 @@ const Blog = () => {
               className="rounded-[12px]"
             />
             <div className="flex-col flex">
-              <h2 className="text-[36px] leading-[43.2px]  tracking-[2%] text-black font-[600]">
+              <h2 className="text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[43.2px]  tracking-[2%] text-black font-[600]">
                 {story.title}
               </h2>
-              <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%] mt-[24px]">
+              <p className="text-[14px] lg:text-[24px] text-[#424242] font-[400] leading-[16.8px] lg:leading-[28.8px] tracking-[2%] mt-[24px]">
                 {story.content}
               </p>
-              <p className="text-[24px] text-[#424242] font-[400] leading-[28.8px] tracking-[2%] mt-[8px]">
+              <p className="text-[14px] lg:text-[24px] text-[#424242] font-[400] leading-16.8px] lg:leading-[28.8px] tracking-[2%] mt-[8px]">
                 {story.date}
               </p>
             </div>

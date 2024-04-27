@@ -1,13 +1,13 @@
 import React from "react";
 import Back from "../(components)/back";
 import { Heading } from "../(components)/heading";
-import { InputOutline } from "@/components/ui/input";
+import { Input, InputOutline } from "@/components/ui/input";
 import { CiSearch } from "react-icons/ci";
 import { Button, ButtonOutline } from "@/components/ui/button";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import eventImg from "../../public/assets/event.png";
 import Image from "next/image";
-
+import calendar from "../../public/assets/calendar.svg";
 const Events = () => {
   const events = [
     {
@@ -37,11 +37,17 @@ const Events = () => {
         <div className="mt-[40px]">
           {/* Search Events */}
           <div className="relative">
-            <InputOutline
+            <div className="bg-gradient-to-tr from-primaryRed to-primaryOrange p-[1px] rounded-[12px]">
+              <Input
+                className="h-[57px]  pl-[48px] border-[0.5px] rounded-[12px]"
+                placeholder="Search for events"
+              />
+            </div>
+            {/* <InputOutline
               type="search"
               className="h-[57px]  lg:pl-[48px] border-[0.5px]"
               placeholder="Search for events"
-            />
+            /> */}
             <CiSearch className="text-[#292D32] text-[24px] absolute top-[50%] translate-y-[-50%] left-[12px]" />
             <Button className="p-[12px] absolute right-[12px] top-[50%] translate-y-[-50%] rounded-[12px] text-[14px] font-[700] leading-[16.8px]">
               Find Event
@@ -80,7 +86,13 @@ const Events = () => {
                     {/* Calendar & title */}
                     <div className="flex gap-x-[12px]">
                       <div className="w-[44px] lg:w-[100px] h-[54.84px] lg:h-[125px]">
-                        image
+                        <Image
+                          src={calendar}
+                          width={44}
+                          height={54.84}
+                          alt="calendar"
+                          className=""
+                        />
                       </div>
                       <h2 className="text-[24px] lg:hidden lg:text-[36px] lg:leading-[43.2px] font-[600] leading-[28.8px] tracking-[2%] text-black ">
                         {item.title}

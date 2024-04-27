@@ -159,19 +159,19 @@ const page = () => {
     <>
       <div className="px-[16px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
         <Back />
-        <div className="lg:mt-[40px]">
+        <div className="mt-[40px]">
           <Heading title="Seasoned Bankers Group Resources" />
         </div>
-        <div className="flex flex-col gap-y-[40px] lg:mt-[40px]">
+        <div className="flex flex-col gap-y-[40px] mt-[40px]">
           {resources?.map((item, index) => (
             <Accordion key={index} type="single" collapsible className="">
               <AccordionItem value={`item ${index + 1}`}>
-                <AccordionTrigger className="text-[#424242] lg:text-[28px] font-[400] lg:leading-[33.6px] tracking-[2%]pt-[8px] pb-[16px]">
+                <AccordionTrigger className="text-[#424242] text-[28px] font-[400] leading-[33.6px] tracking-[2%] pt-[8px] pb-[16px]">
                   {item.title}
                 </AccordionTrigger>
-                <AccordionContent className="lg:mt-[40px] flex flex-col gap-y-[24px]">
+                <AccordionContent className="lg:mt-[40px] max-lg:mt-[40px] flex flex-col gap-y-[24px]">
                   {item?.content.map((subItem, index) => (
-                    <div key={index} className="flex gap-x-[24px]">
+                    <div key={index} className="flex max-lg:flex-col gap-x-[24px]">
                       <div className="flex flex-col">
                         <h3 className="font-[600] text-[36px] leading-[43.2px] tracking-[2%] text-black">
                           {subItem.title}
@@ -188,7 +188,7 @@ const page = () => {
                         width={486}
                         height={350}
                         alt=""
-                        className="lg:w-[486px] shrink-0 rounded-[12px]"
+                        className="lg:w-[486px] max-lg:mt-[24px] shrink-0 rounded-[12px]"
                       />
                     </div>
                   ))}
@@ -197,11 +197,11 @@ const page = () => {
             </Accordion>
           ))}
         </div>
-        <div className="mt-[80px]">
+        <div className="mt-[80px] ">
           <Heading title="Blog" />
           <Blog />
         </div>
-        <div className="mt-[48px]">
+        <div className="mt-[48px] max-lg:mb-[64px]">
           <Heading title="Related Post" />
           <div className="mt-[40px]">
             <Blog />

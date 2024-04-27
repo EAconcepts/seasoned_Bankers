@@ -55,11 +55,11 @@ const Offer = ({pic}:{pic?: StaticImageData}) => {
           height={328}
           width={328}
           alt="woman"
-          className="size-[328px] rounded-[10.24px] lg:hidden"
+          className="size-[328px] max-lg:object-cover max-lg:object-top rounded-[10.24px] lg:hidden"
         />
         </div>
         <Image
-          src={offerImage2}
+          src={pic || offerImage2}
           height={3478}
           width={818}
           alt="woman"
