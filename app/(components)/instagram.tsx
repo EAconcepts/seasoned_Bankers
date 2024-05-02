@@ -37,7 +37,7 @@ const Instagram = () => {
       : [],
     combine: (results) => {
       return {
-        data: results.map((result) => result?.data?.data),
+        data: results.map((result:any) => result?.data?.data),
         pending: results.some((result) => result.isPending),
       };
     },
