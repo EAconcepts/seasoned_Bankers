@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { Underline } from "./events";
 
-export const Heading = ({ className, title }: { className?: string, title: string }) => {
+export const Heading = ({ className, title, lineClass }: { className?: string, title: string, lineClass?:string }) => {
   return (
     <div className="">
       <h2
@@ -12,7 +12,7 @@ export const Heading = ({ className, title }: { className?: string, title: strin
       >
         {title}
       </h2>
-      <Underline />
+      <Underline className={lineClass}  />
     </div>
   );
 };

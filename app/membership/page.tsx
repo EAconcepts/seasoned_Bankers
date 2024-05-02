@@ -6,6 +6,7 @@ import bePart from "../../public/assets/bePart.png";
 import { Button } from "@/components/ui/button";
 import Updates from "../(components)/updates";
 import Community from "../(components)/community";
+import { Heading } from "../(components)/heading";
 
 const Membership = () => {
   const whyJoin = [
@@ -127,7 +128,7 @@ const Membership = () => {
         {/* Membership Options */}
         <div className="max-lg:mt-[24px] lg:mt-[40px]">
           <h2 className="text-[28px] font-[600] leading-[33.6px] tracking-[2%] text-black lg:text-[36px] lg:leading-[43.2px]">
-            Seasoned Bankers Group Membership Options
+            Seasoned Bankers Group Membership
           </h2>
           <Underline />
           <p className="font-[400] mt-[24px] text-[16px] leading-[19.2px] tracking-[2%] lg:text-[24px] lg:leading-[28.8px] text-[#424242] ">
@@ -137,34 +138,25 @@ const Membership = () => {
             and their associated benefits:
           </p>
           <div className="mt-[32px] gap-y-[40px] flex flex-col">
-            {membershipOptions?.map((options, index) => (
-              <div
-                key={index}
-                className="flex flex-col mt[32px] gap-y-[24px] lg:gap-y-[40px] lg:text-[36px] lg:leading-[43.2px]"
-              >
-                <h3 className="text-[24px] font-[600] leading-[28.8px] tracking-[2%] text-black ">
-                  {options.title}
-                </h3>
-                {options?.desc && (
-                  <p className="text-[#424242] -mt-[20px] text-[14px] lg:text-[24px] leading-[16.8px] tracking-[2%] font-[400]">
-                    {options.desc}
-                  </p>
-                )}
-                <ul className="flex flex-col gap-y-[12px] list-disc list-inside ">
-                  {options?.benefits?.map((benefit, index) => (
-                    <li
-                      key={index}
-                      className="font-[400] text-[14px] lg:text-[24px] leading-[28.8px] tracking-[2%]"
-                    >
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
-                <p className="bg-[#FEF9EC] rounded-[12px] py-[16px] px-[20px] text-[16px] lg:text-[24px] lg:leading-[28.8px] lg:w-fit font-[400] leading-[19.2px] text-black">
-                  {options.title} - Annual Dues: ${options.dues}
-                </p>
-              </div>
-            ))}
+            {/* {membershipOptions?.map((options, index) => ( */}
+            <div className="flex flex-col mt[32px] gap-y-[24px] lg:gap-y-[40px] lg:text-[36px] lg:leading-[43.2px]">
+              <Heading lineClass="w-[240px]" title=" Seasoned Bankers Group Membership" />
+              <ul className="flex flex-col gap-y-[12px] list-disc list-inside ">
+                <li className="font-[400] text-[14px] lg:text-[24px] leading-[28.8px] tracking-[2%]">
+                  Membership in the Seasoned Bankers Group is subject to a
+                  one-time annual fee.
+                </li>
+                <li className="font-[400] text-[14px] lg:text-[24px] leading-[28.8px] tracking-[2%]">
+                  Upon acceptance, new members will be entitled to all the
+                  benefits mentioned above.
+                </li>
+              </ul>
+              <p className="bg-[#FEF9EC] rounded-[12px] py-[16px] px-[20px] text-[16px] lg:text-[24px] lg:leading-[28.8px] lg:w-fit font-[400] leading-[19.2px] text-black">
+                <span className="font-[700]">SBG Student Membership - </span>{" "}
+                <span className="font-[400]">Annual Dues: </span>{" "}
+                <span className="text-primaryRed">NGN 40,000</span>
+              </p>
+            </div>
           </div>
           <Button className="font-[700] lg:mt-[40px] lg:text-[24px] lg:leading-[28.8px] text-[16px] leading-[19.2px] text-white py-[12px] px-[16px]">
             Become a Member Today

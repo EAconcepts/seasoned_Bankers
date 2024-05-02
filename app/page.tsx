@@ -7,19 +7,20 @@ import Updates from "./(components)/updates";
 import Team from "./(components)/team";
 import Follow from "./(components)/follow";
 import Footer from "./(components)/footer";
+import Instagram from "./(components)/instagram";
 
 export default function Home() {
   return (
     <main className="flex flex-col w-full font-sofiaSans">
       <Hero />
       <div className="max-lg:mt-[24px]">
-      <Events />
+        <Events />
       </div>
       <Membership />
       <Offer />
       <Updates />
-      <Team/>
-      <Follow/>
+      <Team />
+      <Follow />
     </main>
   );
 }

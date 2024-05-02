@@ -1,4 +1,6 @@
-import { Button, ButtonOutline } from "@/components/ui/button";
+'use client'
+
+import { Button } from "@/components/ui/button";
 import React from "react";
 import image1 from "../../public/assets/image1.png";
 import image2 from "../../public/assets/image2.png";
@@ -6,11 +8,12 @@ import image3 from "../../public/assets/image3.png";
 import image4 from "../../public/assets/image4.png";
 import image5 from "../../public/assets/image5.png";
 import image6 from "../../public/assets/image6.png";
-import Image from "next/image";
 import ImageGrid from "./image-grid";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
   const heroImages = [image1, image2, image3, image4, image5, image6];
+  const router = useRouter()
   return (
     <>
       <div className="pt-[40px] lg:mt-[40px] lg:px-[96px] px-[28px] flex max-lg:flex-col font-sofiaSans lg:pb-[80px]">
@@ -29,7 +32,7 @@ const Hero = () => {
             with Banking Experts and Gain valuable insights into the banking
             sector and financial world.
           </p>
-          <Button className="font-[700] lg:text-[24px] lg:leading-[28.8px] leading-[19.2px] w-fit mt-[40px]">
+          <Button onClick={()=>router.push('/signup')} className="font-[700] lg:text-[24px] lg:leading-[28.8px] leading-[19.2px] w-fit mt-[40px]">
             Become A Member Today
           </Button>
         </div>

@@ -68,15 +68,7 @@ const Events = () => {
                   <IoChevronForwardOutline />
                 </div>
               </div>
-              {/* Buttons */}
-              <div className="flex gap-x-[12px] lg:gap-x-[24px] mt-[24px]">
-                <Button className="font-[700] text-[14px] leading-[16.8px] py-[8px] px-[16px]">
-                  List
-                </Button>
-                <ButtonOutline className="h-fit text-black text-[12px] font-[600] leading-[16.8px] p-[8px]">
-                  Calendar
-                </ButtonOutline>
-              </div>
+             
             </div>
             {/* Events */}
             <div className="flex py-[8px] px-[12px] mt-[24px] flex-col gap-y-[24px]">
@@ -88,10 +80,10 @@ const Events = () => {
                       <div className="w-[44px] lg:w-[100px] h-[54.84px] lg:h-[125px]">
                         <Image
                           src={calendar}
-                          width={44}
-                          height={54.84}
+                          width={100}
+                          height={125}
                           alt="calendar"
-                          className=""
+                          className="lg:w-[100px] lg:h-[125px]"
                         />
                       </div>
                       <h2 className="text-[24px] lg:hidden lg:text-[36px] lg:leading-[43.2px] font-[600] leading-[28.8px] tracking-[2%] text-black ">
@@ -132,7 +124,7 @@ const Events = () => {
                       </div>
                     </div>
                   </div>
-                  <Image src={item.image} width={304} height={71} alt="" />
+                  <Image src={item.image} width={457} height={351} alt="" className="lg:w-[457px] lg:h-[351px]" />
                 </div>
               ))}
             </div>

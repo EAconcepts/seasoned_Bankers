@@ -1,4 +1,6 @@
+"use client";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -17,6 +19,7 @@ const Events = () => {
       time: "2:00pm GST",
     },
   ];
+  const router = useRouter();
   return (
     <div className="p-[16px] lg:py-[40px] max-lg:mt[24px] lg:px-[96px] bg-[#FEF9EC] flex flex-col font-sofiaSans">
       <div className="">
@@ -44,7 +47,10 @@ const Events = () => {
             </div>
           ))}
         </div>
-        <Button className="w-fit mt-[40px] font-[700] lg:py-[16px] lg:px-[24px] py-[8px] px-[12px] rounded-[12px] text-[16px] lg:text-[24px] leading-[19.2px]">
+        <Button
+          onClick={() => router.push("/events")}
+          className="w-fit mt-[40px] font-[700] lg:py-[16px] lg:px-[24px] py-[8px] px-[12px] rounded-[12px] text-[16px] lg:text-[24px] leading-[19.2px]"
+        >
           View All Events
         </Button>
       </div>
