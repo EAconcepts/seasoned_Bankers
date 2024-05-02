@@ -28,7 +28,7 @@ const TopNav = () => {
         height={54}
         width={47}
         alt="logo"
-        className="size-auto"
+        className="size-auto mt-[10.5px]"
         onClick={() => router.push("/")}
       />
       {/* Links */}
@@ -83,11 +83,14 @@ const TopNav = () => {
         ))}
         {showMenu && (
           <div className="mt-[24px] px-[16px] self-start">
-            <ButtonOutline onClick={()=>{
-              router.push('/signin')
-              setShowMenu(false)
-            }} className="py-[8px] px-[20px] text-[16px] leading-[19.2px] text-black h-fit">
-              Login
+            <ButtonOutline
+              onClick={() => {
+                router.push("/signup");
+                setShowMenu(false);
+              }}
+              className="py-[8px] px-[16px] text-[12px] leading-[19.2px] text-black h-fit"
+            >
+              Become A Member
             </ButtonOutline>
           </div>
         )}
@@ -98,8 +101,11 @@ const TopNav = () => {
           className="text-black text-[20px] lg:hidden"
         />
         <div className="max-lg:hidden ">
-          <ButtonOutline onClick={()=>router.push('/signin')} className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]">
-            {pathname === "/" ? "Become a Member" : "Login"}
+          <ButtonOutline
+            onClick={() => router.push("/signup")}
+            className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]"
+          >
+            Become a Member
           </ButtonOutline>
         </div>
       </div>
