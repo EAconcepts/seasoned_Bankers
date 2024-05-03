@@ -1,10 +1,10 @@
 "use client";
 import React, { createContext, useEffect, useState } from "react";
 
-const AuthContext = createContext({});
+export const AuthContext = createContext({});
 
 export interface UserProps {
-  name?: String;
+  password?: String;
   email?: String;
 }
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
@@ -14,8 +14,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let userString = localStorage.getItem("user");
-      let tkn = localStorage.getItem("token");
-      setToken(tkn);
+      // let tkn = localStorage.getItem("token");
+      // setToken(tkn);
       setUser(userString !== null && JSON.parse(userString));
     }
   }, []);

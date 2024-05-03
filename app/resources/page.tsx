@@ -159,10 +159,10 @@ const page = () => {
     <>
       <div className="px-[16px] lg:px-[96px] lg:py-[40px] font-sofiaSans">
         <Back />
-        <div className="mt-[40px]">
+        {/* <div className="mt-[40px]">
           <Heading title="Seasoned Bankers Group Resources" />
-        </div>
-        <div className="flex flex-col gap-y-[40px] mt-[40px]">
+        </div> */}
+        {/* <div className="flex flex-col gap-y-[40px] mt-[40px]">
           {resources?.map((item, index) => (
             <Accordion key={index} type="single" collapsible className="">
               <AccordionItem value={`item ${index + 1}`}>
@@ -196,7 +196,7 @@ const page = () => {
               </AccordionItem>
             </Accordion>
           ))}
-        </div>
+        </div> */}
         <div className="mt-[80px] ">
           <Heading title="Blog" />
           <Blog />

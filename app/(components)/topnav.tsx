@@ -85,7 +85,7 @@ const TopNav = () => {
           <div className="mt-[24px] px-[16px] self-start">
             <ButtonOutline
               onClick={() => {
-                router.push("/signup");
+                router.push("/onboarding");
                 setShowMenu(false);
               }}
               className="py-[8px] px-[16px] text-[12px] leading-[19.2px] text-black h-fit"
@@ -102,7 +102,7 @@ const TopNav = () => {
         />
         <div className="max-lg:hidden ">
           <ButtonOutline
-            onClick={() => router.push("/signup")}
+            onClick={() => router.push("/onboarding")}
             className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]"
           >
             Become a Member
