@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Pagination = ({ id }: { id: string }) => {
+const Pagination = ({ id }: { id?: string }) => {
   console.log(id);
   console.log(Number(id));
   const router = useRouter();
@@ -17,7 +17,7 @@ const Pagination = ({ id }: { id: string }) => {
           router.push(`/updates/${Number(id) - 1}`);
         }}
         className={` flex gap-x-[16px] items-center ${
-          id > "1" && "text-primaryRed border-[#D7322C]"
+         id && id > "1" && "text-primaryRed border-[#D7322C]"
         } shrink-0`}
       >
         <span className="lg:text-[24px] text-[16px] leading-[19.2px] lg:leading-[28.8px] tracking-[2%]">
@@ -35,7 +35,7 @@ const Pagination = ({ id }: { id: string }) => {
           router.push(`/updates/${Number(id) + 1}`);
         }}
         className={` flex gap-x-[16px] items-center ${
-          id < "3" && "text-primaryRed border-[#D7322C]"
+         id && id < "3" && "text-primaryRed border-[#D7322C]"
         } shrink-0`}
       >
         <span

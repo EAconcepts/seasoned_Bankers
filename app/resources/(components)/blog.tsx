@@ -81,7 +81,7 @@ const Blog = () => {
           </div>
         </div>
         {/* Pagination */}
-        <Pagination />
+        <Pagination  />
       </div>
     </div>
   );
