@@ -141,12 +141,12 @@ const Membership = () => {
             {/* {membershipOptions?.map((options, index) => ( */}
             <div className="flex flex-col mt[32px] gap-y-[24px] lg:gap-y-[40px] lg:text-[36px] lg:leading-[43.2px]">
               <Heading lineClass="w-[240px]" title=" Seasoned Bankers Group Membership" />
-              <ul className="flex flex-col gap-y-[12px] list-disc list-inside ">
-                <li className="font-[400] text-[14px] lg:text-[24px] leading-[28.8px] tracking-[2%]">
+              <ul className="flex flex-col gap-y-[12px] list-disc list-inside text-[#424242] ">
+                <li className="font-[400] text-[16px] lg:text-[24px] leading-[19.2px] lg:leading-[28.8px] tracking-[2%]">
                   Membership in the Seasoned Bankers Group is subject to a
                   one-time annual fee.
                 </li>
-                <li className="font-[400] text-[14px] lg:text-[24px] leading-[28.8px] tracking-[2%]">
+                <li className="font-[400] text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px] tracking-[2%]">
                   Upon acceptance, new members will be entitled to all the
                   benefits mentioned above.
                 </li>

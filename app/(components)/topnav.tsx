@@ -103,7 +103,7 @@ const TopNav = () => {
         <div className="max-lg:hidden ">
           <ButtonOutline
             onClick={() => router.push("/onboarding")}
-            className="text-[14px] leading-[16.8px] text-black font-[600] h-fit px-[16px] py-[12px]"
+            className="text-[16px] leading-[19.2px] text-black font-[600] h-fit px-[16px] py-[12px]"
           >
             Become a Member
           </ButtonOutline>

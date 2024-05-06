@@ -37,10 +37,10 @@ const Membership = () => {
           <div key={index} className="flex lg:even:flex-row-reverse max-lg:flex-col lg:gap-x-[24px] ">
             <Image
               src={benefit.image}
-              width={328}
-              height={203.82}
+              width={500}
+              height={400}
               alt={benefit.title}
-              className="rounded-[8.1px] lg:rounded-[12px] lg:w-[439px] lg:h-[284px] w-[328px] h-[203.82px]"
+              className="rounded-[8.1px] lg:rounded-[12px] lg:w-[439px] lg:h-[284px] w-full h-[203.82px]"
             />
             <div className="mt-[24px] flex flex-col gap-y-[16px]">
             <h2 className="font-[600] lg:text-[36px] lg:leading-[43.2px] text-[24px] leading-[28.8px] tracking-[2%] text-black">

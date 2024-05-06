@@ -2,7 +2,7 @@ import React from "react";
 import Back from "../(components)/back";
 import { Heading } from "../(components)/heading";
 import Image from "next/image";
-import logo from "../../public/assets/logo.png";
+import logo from "../../public/assets/logo2.png";
 import Offer from "../(components)/offer";
 import offerImg from "../../public/assets/offer1.png";
 import WhyJoin from "../membership/(components)/whyJoin";
@@ -60,15 +60,14 @@ const About = () => {
                 alt=""
                 className="lg:w-[384px] lg:h-full w-[179.54px] max-lg:h-[206px] shrink-0"
               />
-            </div>
-
+            </div>  
             <div className="flex flex-col max-lg:mt-[24px] gap-y-[24px]">
               {/* About */}
               <div className="flex flex-col gap-y-[16px]">
                 <h2 className="hidden lg:block lg:text-[36px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
                   About Us
                 </h2>
-                <p className="text-[14px] leading-[16.8px] lg:text-[24px] text-[#424242] font-[400] lg:leading-[28.8px] tracking-[2%]">
+                <p className="text-[16px] leading-[19.6px] lg:text-[24px] text-[#424242] font-[400] lg:leading-[28.8px] tracking-[2%]">
                   Born from a single tweet in 2021, our association of
                   professional bankers and financial experts has grown into a
                   formidable force in the financial industry. Registered under
@@ -84,7 +83,7 @@ const About = () => {
                 <h2 className="lg:text-[36px] text-[28px] leading-[33.6px] text-black font-[600] tracking-[2%] lg:leading-[43.2px]">
                   Our Philosophy as a Group
                 </h2>
-                <p className="lg:text-[24px] text-[14px] text-[#424242] font-[400] leading-[16.8px] lg:leading-[28.8px] tracking-[2%]">
+                <p className="lg:text-[24px] text-[16px] text-[#424242] font-[400] leading-[19.6px] lg:leading-[28.8px] tracking-[2%]">
                   At Seasoned Bankers Group, we believe in the power of
                   knowledge sharing, mentorship, and collaboration for
                   professional growth in banking. Our supportive community
@@ -103,7 +102,7 @@ const About = () => {
               {" "}
               Our Vision for The Future
             </h2>
-            <p className="lg:text-[24px] text-[14px] mt-[24px] lg:mt-[40px] text-[#424242] font-[400] leading-[16.8px] lg:leading-[28.8px] tracking-[2%]">
+            <p className="lg:text-[24px] text-[16px] mt-[24px] lg:mt-[40px] text-[#424242] font-[400] leading-[19.6px] lg:leading-[28.8px] tracking-[2%]">
               Our vision for Seasoned Bankers Group is to be the leading hub for
               banking professionals, offering top-notch mentorship, networking,
               and career resources. We plan to go global, setting up chapters in
@@ -122,7 +121,7 @@ const About = () => {
             {coreValues?.map((value, index) => (
               <div
                 key={index}
-                className="flex font-[400] lg:text-[24px] text-[14px]  leading-[16.px] lg:leading-[28.8px] tracking-[2%]"
+                className="flex font-[400] lg:text-[24px] text-[16px]  leading-[16.px] lg:leading-[28.8px] tracking-[2%]"
               >
                 <span className="font-[700]">{index + 1}.</span>
                 <div className="">

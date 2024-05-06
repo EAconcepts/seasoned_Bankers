@@ -63,7 +63,7 @@ const Signin = () => {
                   type="email"
                   required
                   value={loginDetails.email}
-                  className=" lg:h-[78px] pl-[24px] rounded-[12px] lg:text-[32px] text-[14px] font-[400] leading-[16.8px] tracking-[2%] lg:leading-[38.4px] text-[#66757F]"
+                  className=" lg:h-[78px] pl-[24px] rounded-[12px] lg:text-[32px] text-[16px] font-[400] leading-[19.2px] tracking-[2%] lg:leading-[38.4px] text-[#66757F]"
                   placeholder="Email"
                 />
               </div>
@@ -75,7 +75,7 @@ const Signin = () => {
                   name="password"
                   required
                   value={loginDetails.password}
-                  className=" pl-[24px] rounded-[12px] text-[14px] font-[400] lg:h-[78px] lg:leading-[38.4px] lg:text-[32px] leading-[16.8px] tracking-[2%] text-[#66757F]"
+                  className=" pl-[24px] rounded-[12px] text-[16px] font-[400] lg:h-[78px] lg:leading-[38.4px] lg:text-[32px] leading-[19.2px] tracking-[2%] text-[#66757F]"
                   placeholder="password"
                 />
               </div>
@@ -84,7 +84,7 @@ const Signin = () => {
               <Button className="text-[16px] w-full lg:text-[36px] lg:leading-[43.2px] lg:py-[20px] leading-[19.2px] tracking-[2%] font-[700]">
                 Login
               </Button>
-              <p className="mt-[12px] p-[8px] lg:text-[24px] lg:mt-[36px] text-primaryRed font-[400] leading-[16.8px] text-[14px]">
+              <p className="mt-[12px] p-[8px] lg:text-[24px] lg:mt-[36px] text-primaryRed font-[400] leading-[19.2px] lg:leading-[28px] text-[16px]">
                 Forget your password?
               </p>
             </div>
@@ -94,7 +94,7 @@ const Signin = () => {
               </span>
               <Link
                 href={"/signup"}
-                className="text-[14px] text-primaryRed lg:text-[24px] "
+                className="text-[16px] text-primaryRed lg:text-[24px] "
               >
                 Join as a member
               </Link>

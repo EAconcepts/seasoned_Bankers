@@ -69,7 +69,7 @@ const SignUp = () => {
         <h5 className="text-[20px] lg:text-[36px] font-[600] lg:leading-[43.2px] leading-[24px] tracking-[2%] text-black">
           Create a membership account{" "}
         </h5>
-        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[14px] leading-[16.8px] tracking-[2%] text-black">
+        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[16px] leading-[19.2px] tracking-[2%] text-black">
           Required fields are marked with an asterisk (*) and must be filled in
           to complete the form
         </p>

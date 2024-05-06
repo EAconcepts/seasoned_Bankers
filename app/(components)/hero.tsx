@@ -32,7 +32,7 @@ const Hero = () => {
             with Banking Experts and Gain valuable insights into the banking
             sector and financial world.
           </p>
-          <Button onClick={()=>router.push('/signup')} className="font-[700] lg:text-[24px] lg:leading-[28.8px] leading-[19.2px] w-fit mt-[40px]">
+          <Button onClick={()=>router.push('/onboarding/signup')} className="font-[700] lg:text-[24px] lg:leading-[28.8px] leading-[19.2px] w-fit mt-[40px]">
             Become A Member Today
           </Button>
         </div>

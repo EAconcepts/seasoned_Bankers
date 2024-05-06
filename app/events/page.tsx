@@ -49,7 +49,7 @@ const Events = () => {
               placeholder="Search for events"
             /> */}
             <CiSearch className="text-[#292D32] text-[24px] absolute top-[50%] translate-y-[-50%] left-[12px]" />
-            <Button className="p-[12px] absolute right-[12px] top-[50%] translate-y-[-50%] rounded-[12px] text-[14px] font-[700] leading-[16.8px]">
+            <Button className="p-[12px] absolute right-[12px] top-[50%] translate-y-[-50%] rounded-[12px] text-[16px] font-[700] leading-[19.2px]">
               Find Event
             </Button>
           </div>
@@ -68,7 +68,6 @@ const Events = () => {
                   <IoChevronForwardOutline />
                 </div>
               </div>
-             
             </div>
             {/* Events */}
             <div className="flex py-[8px] px-[12px] mt-[24px] flex-col gap-y-[24px]">
@@ -95,27 +94,27 @@ const Events = () => {
                       <h2 className="text-[24px] hidden lg:block lg:text-[36px] lg:leading-[43.2px] font-[600] leading-[28.8px] tracking-[2%] text-black ">
                         {item.title}
                       </h2>
-                      <p className="font-[400] lg:mt-[4px] lg:text-[24px] lg:leading-[28.8px] text-[14px] leading-[16.8px] tracking-[2%] text-[#424242]">
+                      <p className="font-[400] lg:mt-[4px] lg:text-[24px] lg:leading-[28.8px] text-[16px] leading-[19.2px] tracking-[2%] text-[#424242]">
                         {item.desc}
                       </p>
                       {/* Event details */}
                       <div className="flex flex-col lg:mt-[24px] gap-y-[24px] leading-[16.8px] tracking-[2%]">
                         {/* Venue */}
-                        <div className="flex pl-[-2px]  lg:text-[24px] text-[14px] lg:leading-[28.8px] leading-[16.8px]">
+                        <div className="flex pl-[-2px] max-lg:mt-[24px]  lg:text-[24px] text-[] lg:leading-[28.8px] leading-[16.8px]">
                           <h4 className="font-[700]">Venue:</h4>
                           <span className="font-[400] pl-[2px]  ">
                             {item.venue}
                           </span>
                         </div>
                         {/* Time */}
-                        <div className="flex pl-[-2px]  lg:text-[24px] text-[14px] lg:leading-[28.8px] leading-[16.8px]">
+                        <div className="flex pl-[-2px]  lg:text-[24px] text-[16px] lg:leading-[28.8px] leading-[19.2px]">
                           <h4 className="font-[700]  ">Time:</h4>
                           <span className="pl-[2px] font-[400]  ">
                             {item.time}
                           </span>
                         </div>
                         {/* Open to */}
-                        <div className="inline  lg:text-[24px] text-[14px] lg:leading-[28.8px] leading-[16.8px] ">
+                        <div className="inline  lg:text-[24px] text-[16px] lg:leading-[28.8px] leading-[19.2px] ">
                           <h4 className="inline font-[700]  ">Open To:</h4>
                           <span className="font-[400] pl-[2px]  ">
                             {item.openTo}
@@ -124,7 +123,13 @@ const Events = () => {
                       </div>
                     </div>
                   </div>
-                  <Image src={item.image} width={457} height={351} alt="" className="lg:w-[457px] lg:h-[351px]" />
+                  <Image
+                    src={item.image}
+                    width={457}
+                    height={351}
+                    alt=""
+                    className="lg:w-[457px] lg:h-[351px]"
+                  />
                 </div>
               ))}
             </div>

@@ -96,7 +96,7 @@ const Team = ({ className }: { className?: string }) => {
             />
             <div className=" w-full px-[8px] mt-[20px]">
               <div className="w-full flex flex-col items-center">
-                <h3 className="text-[14px] lg:text-[24px] lg:leading-[28.8px] font-[600] leading-[16.8px] tracking-[2%] text-black">
+                <h3 className="text-[16px] lg:text-[24px] lg:leading-[28.8px] font-[600] leading-[19.2px] tracking-[2%] text-black">
                   {team.name}
                 </h3>
                 <p className="text-[#D7322C] italic text-[10px] leading-[12px] lg:text-[16px] lg:leading-[19.2px] tracking-[2%] font-[400]">
@@ -107,9 +107,6 @@ const Team = ({ className }: { className?: string }) => {
           </div>
         ))}
       </div>
-      {/* <ButtonOutline className="font-[700] hidden bg-[#F7EAD6] text-[14px] leading-[16.8px] text-black h-fit py-[8px] px-[12px] -[24px] w-fit">
-        See All Members
-      </ButtonOutline> */}
     </div>
   );
 };

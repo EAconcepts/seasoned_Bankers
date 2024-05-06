@@ -39,7 +39,7 @@ const Events = () => {
                 <h1 className="font-[600] text-[24px] lg:text-[36px] lg:leading-[43.2px] leading-[28.8px] tracking-[2%] text-black">
                   {item.title}
                 </h1>
-                <div className="flex flex-col font-[400] lg:text-[28.8px] lg:leading-[28.8px] text-[14px] leading-[16.8px] tracking-[2%] text-[#424242]">
+                <div className="flex flex-col font-[400] lg:text-[28.8px] lg:leading-[28.8px] text-[16px] leading-[19.2px] tracking-[2%] text-[#424242]">
                   <small>{item.venue}</small>
                   <small>{item.time}</small>
                 </div>

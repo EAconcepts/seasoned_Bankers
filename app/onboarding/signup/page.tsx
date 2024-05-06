@@ -84,10 +84,10 @@ const SignUpForm = () => {
         <h5 className="text-[20px] lg:text-[36px] font-[600] lg:leading-[43.2px] leading-[24px] tracking-[2%] text-black">
           Personal Information
         </h5>
-        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[14px] leading-[16.8px] tracking-[2%] text-black">
+        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[16px] leading-[19.2px] tracking-[2%] text-black">
           This information would be used to create your account.
         </p>
-        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[14px] leading-[16.8px] tracking-[2%] text-black">
+        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[8px] text-[16px] leading-[19.2px] tracking-[2%] text-black">
           Required fields are marked with an asterisk (*) and must be filled in
           to complete the form
         </p>
@@ -230,7 +230,7 @@ const SignUpForm = () => {
         <h6 className=" after:content-['*'] after:text-primaryRed leading-[19.2px] font-[600] lg:text-[36px] lg:leading-[43.2px]">
           Reference Check
         </h6>
-        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[4px] text-[14px] leading-[16.8px] tracking-[2%] text-black mb-[16px]">
+        <p className="font-[300] lg:text-[24px] lg:leading-[28.8px] mt-[4px] text-[16px] leading-[19.2px] tracking-[2%] text-black mb-[16px]">
           Click on the box to upload references from colleagues or supervisors,
           to verify your experience(s).
         </p>

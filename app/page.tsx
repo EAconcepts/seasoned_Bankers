@@ -20,7 +20,7 @@ export default function Home() {
       <Offer />
       <Updates />
       <Team />
-      <Follow />
+      {/* <Follow /> */}
     </main>
   );
 }

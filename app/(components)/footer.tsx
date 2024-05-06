@@ -99,7 +99,7 @@ const Footer = () => {
                   <h4 className="text-[20px] font-[600] leading-[24px] tracking-[2%] text-white lg:text-[36px] lg:leading-[43.2px]  ">
                     Vision For The Future
                   </h4>
-                  <p className="text-[14px] font-[400] lg:text-[24px] lg:leading-[28.8px] leading-[16.8px] tracking-[2%] text-[#CFCFCF] ">
+                  <p className="text-[16px] font-[400] lg:text-[24px] lg:leading-[28.8px] leading-[19.2px] tracking-[2%] text-[#CFCFCF] ">
                     {" "}
                     At Seasoned Bankers Group, we aim to empower a community of
                     driven bankers poised to make a lasting impact on the future
@@ -108,16 +108,16 @@ const Footer = () => {
                 </div>
                 {/* News letter */}
                 <div className="lg:w-full flex flex-col  max-lg:mt-[24px] ">
-                  <h4 className="font-[600] text-[14px] leading-[16.8px] tracking-[2%] lg:text-[20px] lg:leading-[24px] text-white">
+                  <h4 className="font-[600] text-[16px] leading-[19.2px] tracking-[2%] lg:text-[20px] lg:leading-[24px] text-white">
                     Join Our Newsletter
                   </h4>
                   <form className="mt-[40px] lg:w-full  lg:shrink0">
-                    <label className="text-[14px] mb-[8px] font-[400] leading-[16.8px] lg:text-[20px] lg:leading-[24px] tracking-[2%] text-[#CFCFCF]">
+                    <label className="text-[16px] mb-[8px] font-[400] leading-[19.2px] lg:text-[20px] lg:leading-[24px] tracking-[2%] text-[#CFCFCF]">
                       Email
                     </label>
                     <InputOutline className="w-full" />
                     <div className="mt-[32px]">
-                      <Button className="h-fit text-[14px] font-[700] leading-[16.8px] lg:text-[20px] lg:leading-[24px] text-white px-[20px] lg:py-[16px] py-[8px]">
+                      <Button className="h-fit text-[16px] font-[700] leading-[19.2px] lg:text-[20px] lg:leading-[24px] text-white px-[20px] lg:py-[16px] py-[8px]">
                         Submit
                       </Button>
                     </div>
@@ -130,7 +130,7 @@ const Footer = () => {
             </div> */}
           </div>
         </div>
-        <p className="w-full mt-[24px] lg:text-[24px] lg:leading-[28.8px] text-[14px] font-[300] leading-[16.8px] tracking-[2%] text-[#CFCFCF] text-center">
+        <p className="w-full mt-[24px] lg:text-[24px] lg:leading-[28.8px] text-[16px] font-[300] leading-[19.2px] tracking-[2%] text-[#CFCFCF] text-center">
           Copyright (C) 2024 - All Right Reserved
         </p>
       </div>
