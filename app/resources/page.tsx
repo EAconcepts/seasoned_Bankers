@@ -197,7 +197,7 @@ const page = () => {
             </Accordion>
           ))}
         </div> */}
-        <div className="mt-[80px] ">
+        <div className="mt-[40px] ">
           <Heading title="Blog" />
           <Blog />
         </div>
