@@ -41,7 +41,7 @@ const Blog = () => {
             width={600}
             height={400}
             alt=""
-            className="lg:float-left lg:mr-[24px] max-lg:w-full max-lg:h-[218px] rounded-[12px]"
+            className="lg:float-left max-lg:object-cover max-lg:object-top mb-[8px] lg:mr-[24px] max-lg:w-full max-lg:h-[218px] rounded-[12px]"
           />
           {/* Blog content */}
           <div className="max-lg:mt-[24px]">
@@ -99,7 +99,7 @@ const Blog = () => {
               width={600}
               height={400}
               alt=""
-              className="lg:float-right mt-[24px] lg:mr-[24px] max-lg:w-full max-lg:h-[218px] rounded-[12px]"
+              className="lg:float-right mb-[8px] mt-[24px] lg:mr-[24px] max-lg:object-cover max-lg:object-top max-lg:w-full max-lg:h-[218px] rounded-[12px]"
             />
             <h3 className="mt-[24px] lg:text-[36px] lg:leading-[43.2px] font-[600] text-[24px] leading-[28.8px] tracking-[2%] text-black">
               Investing in Your Team and Public Image:
