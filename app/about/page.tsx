@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../../public/assets/logo2.png";
 import Offer from "../(components)/offer";
 import offerImg from "../../public/assets/about-offer.png";
+import offerImg2 from "../../public/assets/offer1.png";
 import WhyJoin from "../membership/(components)/whyJoin";
 import Team from "../(components)/team";
 import Updates from "../(components)/updates";
@@ -134,7 +135,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-[40px]">
-        <Offer pic={offerImg} />
+        <Offer pic={offerImg} pic2={offerImg2} />
       </div>
       {/* Why Join */}
       <div className="lg:pt-[40px] px-[16px] lg:px-[98px]">

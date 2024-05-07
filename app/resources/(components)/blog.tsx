@@ -2,9 +2,8 @@ import { Heading } from "@/app/(components)/heading";
 import React from "react";
 import blog1 from "../../../public/assets/blog-1.png";
 import blog2 from "../../../public/assets/blog2.png";
+import blog3 from "../../../public/assets/blog-2.png";
 import Image from "next/image";
-import { MdArrowBackIos } from "react-icons/md";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Pagination from "./Pagination";
 
 const Blog = () => {
@@ -95,11 +94,11 @@ const Blog = () => {
               </p>
             </div>
             <Image
-              src={blog1}
+              src={blog3}
               width={600}
               height={400}
               alt=""
-              className="lg:float-right mb-[8px] mt-[24px] lg:mr-[24px] max-lg:object-cover max-lg:object-top max-lg:w-full max-lg:h-[218px] rounded-[12px]"
+              className="lg:float-right mb-[8px] mt-[24px] lg:ml-[24px] max-lg:object-cover max-lg:object-top max-lg:w-full max-lg:h-[218px] rounded-[12px]"
             />
             <h3 className="mt-[24px] lg:text-[36px] lg:leading-[43.2px] font-[600] text-[24px] leading-[28.8px] tracking-[2%] text-black">
               Investing in Your Team and Public Image:

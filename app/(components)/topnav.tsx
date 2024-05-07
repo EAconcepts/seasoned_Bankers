@@ -69,7 +69,7 @@ const TopNav = () => {
             className={`${
               pathname === item.path &&
               "lg:text-[#D7322C] lg:font-[700] lg:text-[18px] leading-[21.6px]"
-            }   text-[16px] lg:text-[#050505]  leading-[19.2px] font-[500] text-black max-lg:text-start `}
+            } lg:hover:text-[#D7322C]  text-[16px] lg:text-[#050505]  leading-[19.2px] font-[500] text-black max-lg:text-start `}
           >
             {item.link}
             {showMenu && (

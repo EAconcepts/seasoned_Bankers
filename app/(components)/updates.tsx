@@ -64,7 +64,7 @@ const Updates = () => {
         className="mySwipe w-[100%] mt-[40px] pb-[86px]"
       >
         {updates?.map((update, index) => (
-          <SwiperSlide key={index} onClick={() => router.push(`/updates/${update.id}`)} className="w-[100%]">
+          <SwiperSlide key={index} onClick={() => router.push(`/updates/${update.id}`)} className="w-[100%] cursor-pointer">
             <Image
               src={update.image}
               height={302}

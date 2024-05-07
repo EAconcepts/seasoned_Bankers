@@ -1,8 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import calendar from "@/public/assets/calendar-2.png"
 
 const Events = () => {
   const events = [
@@ -33,7 +35,9 @@ const Events = () => {
           {events?.map((item, index) => (
             <div key={index} className="flex gap-x-[25px]">
               {/* Calendar */}
-              <div className="w-[40px]"></div>
+              <div className="w-[40px] lg:w-[78px]">
+                <Image src={calendar} width={78} height={97.21} alt="" className="max-lg:w-[40px] max-lg:h-[49.5px] lg:w-[78px] lg:h-[97.21px] shrink-0"/>
+              </div>
               {/* event */}
               <div className="flex flex-col">
                 <h1 className="font-[600] text-[24px] lg:text-[36px] lg:leading-[43.2px] leading-[28.8px] tracking-[2%] text-black">

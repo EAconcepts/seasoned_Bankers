@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import offerImage2 from "../../public/assets/offer2.png";
 import offerImage from "../../public/assets/offer.png";
 
-const Offer = ({pic}:{pic?: StaticImageData}) => {
+const Offer = ({pic, pic2}:{pic?: StaticImageData, pic2?: StaticImageData}) => {
   const whatWeOffer = [
     {
       title: "MENTORSHIP PROGRAMS",
@@ -59,7 +59,7 @@ const Offer = ({pic}:{pic?: StaticImageData}) => {
         />
         </div>
         <Image
-          src={pic || offerImage2}
+          src={pic2 || offerImage2}
           height={3478}
           width={818}
           alt="woman"
