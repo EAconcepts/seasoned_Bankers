@@ -4,7 +4,7 @@ import { Heading } from "../(components)/heading";
 import Image from "next/image";
 import logo from "../../public/assets/logo2.png";
 import Offer from "../(components)/offer";
-import offerImg from "../../public/assets/offer1.png";
+import offerImg from "../../public/assets/about-offer.png";
 import WhyJoin from "../membership/(components)/whyJoin";
 import Team from "../(components)/team";
 import Updates from "../(components)/updates";
